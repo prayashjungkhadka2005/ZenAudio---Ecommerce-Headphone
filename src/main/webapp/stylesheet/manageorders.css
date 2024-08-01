@@ -1,0 +1,162 @@
+@charset "ISO-8859-1";
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #000000;
+  flex-basis: 25%;
+
+  height: 110vh;
+  padding: 80px 60px 0 60px;
+}
+.sidebar img {
+  width: 250px;
+}
+.sidebar ul {
+  margin: 20px;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar ul i {
+  margin: 0 10px;
+}
+.ord {
+  border: 2px solid white;
+}
+.sidebar ul a {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 50px 0;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 10px;
+  transition: 0.2s;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  border: none;
+  margin: 10px 60px;
+}
+.logout i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.logout button {
+  width: 160px;
+  background-color: transparent;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+  border: none;
+}
+hr {
+  width: 100%;
+  margin-left: 30px;
+}
+.sidebar ul a:hover {
+  background-color: white;
+  color: #000000;
+  transition: 0.2s;
+}
+/* bar2 */
+.bar2 {
+  flex-basis: 80%;
+}
+.bar2 h1 {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 20px 30px;
+}
+.bar2 a {
+  text-decoration: none;
+  color: white;
+}
+.bar2 button {
+  width: 120px;
+  background-color: #0b7203;
+  margin: 10px 50px;
+  padding: 7px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  right: 0;
+}
+
+.order_details {
+  padding: 50px 10px 20px;
+  margin: 20px 5px;
+}
+
+.order_details .name {
+  display: flex;
+  background-color: rgb(211, 199, 199);
+  padding: 5px;
+}
+
+.order_details h1,
+.order_details h3,
+.order_details div {
+  flex-basis: 15%;
+  text-align: center;
+  font-size: 22px;
+  font-weight: 600;
+
+  padding: 5px;
+}
+.details div i {
+  padding-left: 10px;
+}
+.details div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 40px;
+  padding: 10px 0;
+  border-radius: 10px;
+  background-color: #0b7203;
+  flex-basis: 12%;
+  font-size: 16px;
+  color: white;
+}
+.details div h3 {
+  font-size: 20px;
+  font-weight: 800;
+}
+
+.order_details .details {
+  display: flex;
+  align-items: center;
+  padding: 10px 0 15px 0;
+  margin-top: 10px;
+  border-bottom: 1px solid black;
+}
+
+.order_details h3 {
+  font-size: 18px;
+  font-weight: 400;
+  flex-basis: 15%;
+}

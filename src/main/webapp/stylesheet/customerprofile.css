@@ -1,0 +1,156 @@
+@charset "ISO-8859-1";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.sidebar {
+  background-color: #000000;
+  flex-basis: 25%;
+
+  height: 100vh;
+  padding: 80px 60px 0 60px;
+}
+.sidebar img {
+  width: 250px;
+}
+.sidebar ul {
+  margin: 20px;
+}
+.sidebar ul li {
+  list-style: none;
+}
+.sidebar ul i {
+  margin: 0 10px;
+}
+.products {
+  border: 2px solid white;
+}
+.sidebar ul a {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  color: white;
+  text-decoration: none;
+  font-size: 35px;
+  margin: 50px 0;
+  padding: 10px;
+  cursor: pointer;
+
+  border-radius: 10px;
+  transition: 0.2s;
+}
+
+.sidebar ul a:hover {
+  background-color: white;
+  color: #000000;
+  transition: 0.2s;
+}
+.logout {
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 10%;
+  border: none;
+  margin: 10px 60px;
+}
+.logout i {
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+}
+.logout button {
+  width: 160px;
+  background-color: transparent;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-size: 36px;
+  color: white;
+  font-weight: 800;
+  border: none;
+}
+/* bar2 */
+.bar2 {
+  flex-basis: 70%;
+}
+.bar2 h1 {
+  font-size: 26px;
+  font-weight: 600;
+  padding: 20px 30px;
+}
+.bar2 button {
+  width: 120px;
+  background-color: #0b7203;
+  margin: 10px 40px;
+  padding: 7px 0;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 800;
+  position: absolute;
+  right: 0;
+}
+.product_details {
+  margin-top: 30px;
+  padding: 20px;
+}
+
+.bar2 .product_name {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+}
+.bar2 .product_name input {
+  padding: 15px 10px;
+  margin: 5px;
+  outline: none;
+  width: 96%;
+  border: 2px solid gray;
+  border-radius: 5px;
+}
+label {
+  font-size: 22px;
+  font-weight: 600;
+  padding-bottom: 2px;
+}
+::placeholder {
+  font-weight: 400;
+  font-size: 20px;
+}
+.product_name .name {
+  font-size: 22px;
+}
+.product_name .descriptionn {
+  height: 80px;
+  font-size: 22px;
+  text-align: start;
+}
+.edit_btn {
+  width: 140px;
+  background-color: #b00d14;
+  padding: 12px;
+  border-radius: 10px;
+  font-size: 16px;
+  color: white;
+  font-weight: 800;
+  margin-top: 20px;
+  border: none;
+  position: absolute;
+  top: 55%;
+  left: 82%;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.edit_btn:hover {
+  background-color: #000000;
+  transition: 0.3s;
+}
